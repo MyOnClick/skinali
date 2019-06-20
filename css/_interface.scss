@@ -1,0 +1,27 @@
+body {
+		font-family: 'Proxima Nova Light',  sans-serif;
+		color: $text-color;
+		font-size: 14px;
+}
+.button-o {
+border:2px solid $primary;
+text-transform: uppercase;
+font-size: 12px;
+padding: 17px 22px;
+background-color: transparent;
+font-family: 'Proxima Nova Semibold';
+color: $primary;
+}
+.button {
+	padding: 25px 45px;
+	text-transform: uppercase;
+	border: none;
+	background-color: $primary;
+	color: white;
+	font-family: 'Proxima Nova Semibold';
+}
+@media(max-width:576px) {
+	.button-o {
+		font-size: 10px;
+	}
+}

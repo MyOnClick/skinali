@@ -1,0 +1,23 @@
+.hero {
+	border: 1px solid;
+	background: #f1f1f1 url('') no-repeat center top;
+	background-size: contain;
+	padding-top:120px;
+	padding-bottom: 270px;
+	margin-top: 80px;
+	&__title {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	&__subtitle {
+		display: block;
+		margin-bottom: 67px;
+		font-size: 30px;
+		font-family: 'Proxima Nova Semibold';
+	}
+}
+@media(max-width:991px) {
+	.hero {
+		background-position: top left;
+	}
+}
