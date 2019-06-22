@@ -1,9 +1,13 @@
+.header {
+	// position: absolute;
+}
 .navbar {
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	background-color: #fff;
+	z-index: 500;
 
 	&-wrap {
 		min-height: 80px;
