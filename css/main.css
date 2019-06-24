@@ -1114,7 +1114,7 @@ input[type='checkbox']:checked + label:before {
   .footer__copy {
     position: relative;
     top: 250px;
-    padding: 20px;
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
