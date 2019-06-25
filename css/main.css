@@ -322,7 +322,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .hero {
-  background: #f1f1f1 url("") no-repeat center top;
+  background: #f1f1f1 url("../image/header/2.png") no-repeat center right;
   background-size: contain;
   padding-top: 120px;
   padding-bottom: 270px;
@@ -511,6 +511,10 @@ input[type='checkbox']:checked + label:before {
   margin-bottom: 100px;
 }
 
+.features-block__text {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
 @media (max-width: 991px) {
   .features-block__item {
     -ms-flex-preferred-size: 50%;
@@ -658,6 +662,7 @@ input[type='checkbox']:checked + label:before {
       -ms-flex-align: center;
           align-items: center;
   min-height: 80px;
+  font-family: 'Proxima Nova Semibold';
 }
 
 .blog-list__card {
@@ -808,7 +813,7 @@ input[type='checkbox']:checked + label:before {
   height: 2px;
   background-color: rgba(126, 123, 120, 0.8);
   position: absolute;
-  top: 24%;
+  top: 27%;
   right: -63%;
 }
 
@@ -827,6 +832,10 @@ input[type='checkbox']:checked + label:before {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.step__img {
+  width: 64px;
 }
 
 @media (max-width: 991px) {
@@ -965,9 +974,8 @@ input[type='checkbox']:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -977,6 +985,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .contacts__image {
+  width: 50px;
   margin-bottom: 25px;
 }
 
@@ -1025,6 +1034,13 @@ input[type='checkbox']:checked + label:before {
 .questions__link {
   font-size: 24px;
   color: #507fe1;
+}
+
+@media (max-width: 768px) {
+  .questions-block {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer {

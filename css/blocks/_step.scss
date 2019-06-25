@@ -16,7 +16,7 @@
 		height: 2px;
 		background-color: rgba(#7e7b78, 0.8);
 		position: absolute;
-		top: 24%;
+		top: 27%;
 		right: -63%;
 	}
 
@@ -30,6 +30,9 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+	}
+	&__img {
+		width: 64px;
 	}
 
 }
