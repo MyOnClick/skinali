@@ -3,8 +3,9 @@ body {
 	color: $text-color;
 	font-size: 14px;
 }
+
 img {
-	max-width:  100%;
+	max-width: 100%;
 }
 
 .section {
@@ -30,6 +31,7 @@ img {
 	background-color: transparent;
 	font-family: 'Proxima Nova Semibold';
 	color: $primary;
+
 	&:hover {
 		cursor: pointer;
 	}
@@ -43,6 +45,7 @@ img {
 	background-color: $primary;
 	color: white;
 	font-family: 'Proxima Nova Semibold';
+
 	&:hover {
 		cursor: pointer;
 	}
@@ -56,11 +59,13 @@ img {
 		background-color: lighten($primary, 10%);
 		color: #fff;
 	}
+
 	&-like {
 		&__img {
 			width: 20px;
 			height: 20px;
 		}
+
 		height: 30px;
 		background-color: $primary;
 		border: none;
@@ -71,6 +76,8 @@ img {
 .input {
 	height: 80px;
 	border: 1px solid #dddddd;
+	padding: 20px;
+	font-size: 18px;
 }
 
 .bg-secondary {
@@ -82,6 +89,56 @@ input[type='checkbox'] {
 
 	&:checked+label:before {
 		background-color: $primary;
+	}
+}
+
+.select {
+	width: 100%;
+	height: 80px;
+	border: 1px solid #dddddd;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 40%;
+		transform: transliteY(-20%);
+		right: 20px;
+		width: 20px;
+		height: 20px;
+		background-image: url('../image/offer2/down-arrow.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&_checked {
+		line-height: 80px;
+		padding-left: 30px;
+	}
+
+	&__dropdown {
+		position: absolute;
+		top: 80px;
+		width: 100%;
+		background-color: #fff;
+		border: 1px solid #dddddd;
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		display: none;
+		&_open {
+			display: block;
+		}
+	}
+	&__option {
+		padding: 20px;
+		&:hover {
+			background-color: $bg-secondary;
+		}
 	}
 }
 
@@ -109,6 +166,7 @@ input[type='checkbox'] {
 	.button {
 		font-size: 10px;
 	}
+
 	.button-o {
 		font-size: 10px;
 	}
