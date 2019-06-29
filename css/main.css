@@ -415,13 +415,6 @@ input[type='checkbox']:checked + label:before {
 
 @media (max-width: 768px) {
   .hero {
-    background: none;
-  }
-}
-
-@media (max-width: 750px) {
-  .hero {
-    background: block;
     background: #f1f1f1 url("../image/hero/2.PNG") no-repeat center;
   }
 }
